@@ -1,0 +1,25 @@
+
+def letterCount(n):
+  rules = [0, 3, 3, 5, 4, 5, 3, 5, 5, 4, 3, 6, 6, 7, 8, 7, 8, 9, 8, 8]
+  rules2 = [0, 0, 6, 6, 5, 5, 5, 7, 6, 6]
+  r = 0
+  finished = False
+  x = n
+  while (finished == False):
+    if x < 20:
+      r += rules[x]
+      finished = True
+      if x > 20 and x < 100:
+        i = str(x)[0]
+        x = x - i*10
+        r += rules2[i]
+        
+  return r
+
+
+
+o = letterCount(25)
+print(o)
+
+
+  

@@ -1,0 +1,19 @@
+
+
+
+n = 1
+state = True
+exp = 4
+while state:
+  if n > 10000:
+    state = False
+
+  sum = 0
+  for i in range(len(str(n)):
+    sum += int(str(n)[i])**exp
+
+  if sum == n :
+          
+                 
+  n += 1
+  

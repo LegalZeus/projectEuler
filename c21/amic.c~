@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+int divSum(int n);
+
+int main(void){
+  
+  printf("%d ", divSum(284));
+  
+
+
+
+}
+
+
+int divSum(int n){
+  int sum = 0;
+
+  for(int i = 1;i < sqrt(n);i++){
+    if(n%i == 0){
+      if(n/i == i){
+	sum += i;
+      }else{
+	sum += i+n/i;
+      }
+    }
+  }
+  return sum;
+}

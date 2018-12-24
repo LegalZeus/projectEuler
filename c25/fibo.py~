@@ -1,0 +1,17 @@
+def fib(n):
+  if n < 2:
+    return n
+  return fib(n-1)+fib(n-2)
+
+n = 3
+start = 10
+state = True
+while state:
+  o = fib(n)
+  if len(str(o)) == 5:
+    print(f"\n\n{o}\n\n")
+  else:
+    n += 1
+
+
+print("\n\nfinished\n\n")

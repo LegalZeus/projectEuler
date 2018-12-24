@@ -1,0 +1,32 @@
+
+
+
+
+
+
+a = [0,1,2]
+print(a)
+state = True
+
+while state :
+  maxI = -1
+  for i n range(0, len(a)-1):
+    if a[i] < a[i+1]:
+      maxI = i
+    
+  if maxI == -1:
+    state = False
+
+  maxJ = -1
+  for j in range(0, len(a)):
+    if a[maxI] < a[j]:
+      maxJ = j
+
+  a[maxI], a[maxJ] = a[maxJ], a[maxI]
+
+  end = a[maxI:]
+  a += end
+  
+
+
+print("\n\nfinished\n\n")

@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+long int digits_sum(long long int n);
+unsigned long long power(int n, int exp);
+
+int main(void){
+
+  unsigned long long n  = power(2, 64);
+  //long int o = digits_sum(n);
+  printf("%lld \n", n);
+}
+
+
+
+
+
+long int digits_sum(long long int n){
+  char str[400] = "";
+  sprintf(str, "%lld", n);
+  int r = 0;
+  for(int i = 0;i < strlen(str);i++){
+    int d = str[i] -'0';
+    r += d;
+  }
+
+  return r;
+}
+
+
+
+unsigned long long power(int n, int exp){
+   unsigned long long r = 1;
+
+  for(int i = 1;i < exp+1;i++){
+    r *= n;
+  }
+
+
+
+  return r;
+}

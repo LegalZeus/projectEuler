@@ -1,0 +1,16 @@
+
+
+
+
+
+n = 123
+o = digits_sum(n)
+print(o)
+
+def digits_sum(n):
+  s = str(n)
+  r = 0
+  for i in range(len(s)):
+    r += int(s)
+
+  return r
