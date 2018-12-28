@@ -1,0 +1,14 @@
+p = "123456789"
+
+n = 1
+while True:
+  m = 1
+
+  s = ""
+  while len(s) <= 9:
+    s += str(n*m)
+    m += 1
+  x = s
+  if sorted(x) == sorted(p):
+    print("\n\n", s)
+  
