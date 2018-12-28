@@ -1,0 +1,12 @@
+def toBinary(n):
+  r =""
+
+  while n >=1:
+    if n%2 == 0: r += "0"
+    else: r += "1"
+
+    n = int(n/2)
+  return reverse(r)
+
+
+
